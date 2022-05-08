@@ -7,6 +7,8 @@ Using this Front end has the starting point development for Allocate
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
+If `ng serve`, NOT working. install the angular-cli by running the following command 
+`npm install -g @angular/cli` or `npm install -g @angular/cli. https://cli.angular.io/` 
 
 ## Code scaffolding
 
