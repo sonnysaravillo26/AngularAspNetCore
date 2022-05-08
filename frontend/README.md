@@ -7,6 +7,9 @@ Using this Front end has the starting point development for Allocate
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
+## IIS Setup
+- Path credential setup as specific user: dev:P@55w0rd!123
+
 
 ## Code scaffolding
 
