@@ -10,6 +10,9 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 If `ng serve`, NOT working. install the angular-cli by running the following command 
 `npm install -g @angular/cli` or `npm install -g @angular/cli. https://cli.angular.io/` 
 
+## IIS Setup
+- Path credential setup as specific user: dev:P@55w0rd!123
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.

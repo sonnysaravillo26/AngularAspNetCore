@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuestionsComponent } from './question.component';
+import { WelcomeComponent } from './welcome.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Angular-Material Modules
@@ -14,7 +15,8 @@ import { MatCardModule } from '@angular/material/card';
 @NgModule({
   declarations: [
     AppComponent,
-    QuestionsComponent
+    QuestionsComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
