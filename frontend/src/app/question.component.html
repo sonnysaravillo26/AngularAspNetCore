@@ -1,20 +1,25 @@
-<mat-card>
-    <!-- <mat-cart-content>
-        <form>
-            <mat-form-field>
-                <input matInput placeholder="Question">
-            </mat-form-field>
-        </form> 
-    </mat-cart-content>-->
+<div class="container-fluid bg-primary">
+  <h2> Form and Function </h2>
+  <mat-card>
     <mat-card-content>
+
+      <!-- Form and function  -->
+      <mat-form-field appearance="outline">
+        <mat-label>Question</mat-label>
+        <input matInput placeholder="Placeholder">
+        <mat-icon matSuffix>question_answer</mat-icon> 
+        <mat-hint>Hint</mat-hint>
+      </mat-form-field>  
       
-        <p>
-          FOR DEVELOPER - TESTING PORTAL
-        </p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-button>LIKE</button>
-        <button mat-button>SHARE</button>
-      </mat-card-actions>    
-</mat-card> 
- 
+    </mat-card-content>
+
+    <mat-card-actions>
+
+        <button mat-raised-button (click)="post()"> POST </button>
+
+    </mat-card-actions>
+
+  </mat-card>
+
+  <br />
+</div>

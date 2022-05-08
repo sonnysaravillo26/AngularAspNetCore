@@ -6,4 +6,7 @@ import { Component } from "@angular/core";
 })
 export class QuestionsComponent {
     
+    post() {
+        console.log("Hello world!");
+    }
 }

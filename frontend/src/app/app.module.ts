@@ -1,16 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuestionsComponent } from './question.component';
 import { WelcomeComponent } from './welcome.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Angular-Material Modules
+import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { MatCardModule } from '@angular/material/card';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
     MatButtonModule,
     MatInputModule,
-    MatCardModule
+    MatCardModule,
+    MatFormFieldModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
