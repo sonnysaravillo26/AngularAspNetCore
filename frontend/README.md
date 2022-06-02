@@ -7,9 +7,11 @@ Using this Front end has the starting point development for Allocate
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
+If `ng serve`, NOT working. install the angular-cli by running the following command 
+`npm install -g @angular/cli` or `npm install -g @angular/cli. https://cli.angular.io/` 
+
 ## IIS Setup
 - Path credential setup as specific user: dev:P@55w0rd!123
-
 
 ## Code scaffolding
 
@@ -32,3 +34,13 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 
+## Framework - Front end 
+1. angular material, `https://material.angular.io/components/categories`
+2. icons, `https://fonts.google.com/icons?selected=Material+Icons`
+
+## Following Installation
+1. bootstrap isntallation, `npm install bootstrap`
+2. 
+
+## Code Guide 
+1. Command to generate component `ng g component open-close`
