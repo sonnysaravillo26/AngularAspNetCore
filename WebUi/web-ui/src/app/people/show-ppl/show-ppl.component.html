@@ -1,0 +1,63 @@
+
+<div class="container px-2">
+    <br/>
+    <h3 class="text-primary" >People Management</h3>
+</div>
+
+<!-- FOR EDIT / ADD Function  -->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary float-right m-2" data-toggle="modal" data-target="#exampleModal"
+    (click)="addClick()" data-backdrop="static" data-keyboard="false">
+    Add People
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!-- <h5 class="modal-title" id="exampleModalLabel">{{ModalTitle}}</h5>  .. Error no initializer -->
+                <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="closeClick()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- with passing values from select app-edit-ppl -->
+                <app-edit-ppl [ppl]="ppl" *ngIf="ActivateEditPeopleComp"></app-edit-ppl>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Employee Id</th>
+            <th>Name</th>
+            <th>Email Address</th>
+            <th>User Name</th>
+            <th>Department Name</th>
+            <th>Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dataItem of PeopleList">
+            <td>{{dataItem.PeopleEmployeeId}}</td>
+            <td>{{dataItem.Name}}</td>
+            <td>{{dataItem.EmailAddress}}</td>
+            <td>{{dataItem.Username}}</td>
+            <td>{{dataItem.DepartmentName}}</td>
+            <td>
+                <button type="button" class="btn btn-light mr-1" data-toggle="modal" data-target="#exampleModal"
+                    (click)="editClick()" data-backdrop="static" data-keyboard="false">
+                    Edit
+                </button>
+                <button type="button" class="btn btn-light mr-1">
+                    Delete
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>

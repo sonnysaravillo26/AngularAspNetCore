@@ -1,0 +1,15 @@
+<div class="form-group row">
+    <label class="col-sm-2 col-form-label"> People Name</label>
+    <div class="col-sm-10">
+        <!-- <input type="text" class="form-control" [(ngModel)]="DepartmentName" -->
+        placeholder="Enter People Name">
+    </div>
+
+    <button (click)="addPeople()" *ngIf="ppl.PeopleEmployeeId==0" class="btn btn-primary">
+        Add
+    </button>
+
+    <button (click)="updatePeople()" *ngIf="ppl.PeopleEmployeeId!==0" class="btn btn-primary">
+        Edit
+    </button>
+</div>
